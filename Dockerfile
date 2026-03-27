@@ -1,5 +1,6 @@
 # Stage 1: Build the application with a JDK image
-FROM openjdk:17-jdk-slim AS builder
+
+FROM eclipse-temurin:17
 WORKDIR /app
 COPY HelloWorld.java .
 RUN javac HelloWorld.java
